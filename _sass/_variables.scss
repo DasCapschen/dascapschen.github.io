@@ -15,9 +15,10 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$helvetica: "Fira Sans", Helvetica, Arial, sans-serif;
+$helveticaNeue: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: "Fira Sans", Georgia, serif;
+$defaultFonts: "Fira Sans", -system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Mobile breakpoints
 @mixin mobile {
