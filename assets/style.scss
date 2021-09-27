@@ -20,9 +20,9 @@ html {
 }
 
 body {
-  background: #fff;
-  font-family: "Fira Sans", -system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #404040;
+  background: $white;
+  font-family: $defaultFonts;
+  color: $darkGray;
   line-height: 1.7;
   font-weight: 400;
   font-size: 18px;
@@ -37,7 +37,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Fira Sans", -system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $defaultFonts;
   color: $darkerGray;
   font-weight: bold;
 
@@ -69,7 +69,7 @@ h2 {
 	    vertical-align: middle;
 	    width: 46px;
 	    height: 1px;
-	    background: rgb(192, 211, 218);
+	    background: $green;
 	    margin: 0px 30px;
 	}
 }
@@ -80,7 +80,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #222;
+  color: $darkerGray;
 }
 
 p {
@@ -92,26 +92,26 @@ table {
 }
 
 table tr {
-	border-top: 1px solid #cccccc;
-	background-color: white;
+	border-top: 1px solid $lightGray;
+	background-color: $white;
 	margin: 0;
 	padding: 0;
 }
 
 table tr:nth-child(2n) {
-	background-color: #f8f8f8;
+	background-color: #f3f4f5;
 }
 
 table tr th {
 	font-weight: bold;
-	border: 1px solid #cccccc;
+	border: 1px solid $lightGray;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
 }
 
 table tr td {
-	border: 1px solid #cccccc;
+	border: 1px solid $lightGray;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
@@ -143,16 +143,16 @@ table tr td :last-child {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid $lightGray;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: #fff3ff;
+  background-color: #f3f4f5;
 }
 
 .share-box {
   font-weight: bold;
-  color: #222;
+  color: $darkerGray;
 }
 
 span[data-pullquote] {
@@ -171,16 +171,16 @@ span[data-pullquote]:before {
   padding: 0 -5% 0 0;
   font-size: 1.3em;
   font-style: italic;
-  color: green;
+  color: $darkGreen;
   text-align: center;
 }
 
 a {
-  color: $blue;
+  color: $green;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $green;
   }
 }
 
@@ -350,7 +350,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $green;
     }
   }
 }
@@ -423,17 +423,17 @@ footer {
 }
 
 body:after {
-    background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
-    width: 100%;
-    height: 5px;
-    top: 0;
-    position: absolute;
-    left: 0;
-    content: '';
+  background: linear-gradient(to right, #ffffff 0%, #2196F3 33%, #E91E63 66%, #000 100%);
+  width: 100%;
+  height: 5px;
+  top: 0;
+  position: absolute;
+  left: 0;
+  content: '';
 }
 
 #bar {
-    background: #000;
+    background: $black;
     height: 7px;
     background-size: cover;
     background-position: left 60%;
@@ -445,7 +445,7 @@ body:after {
 }
 
 .post h1{
-  font-family: "Fira Sans", -system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $defaultFonts;
   text-align: center;
   font-weight: bold;
   font-kerning: auto;
@@ -454,7 +454,7 @@ body:after {
 }
 
 .page h1{
-  font-family: "Fira Sans", -system-ui, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: $defaultFonts;
   text-align: center;
   font-weight: bold;
   font-kerning: auto;
@@ -464,17 +464,17 @@ body:after {
 
 .author_title{
   text-align: center;
-  color: #939aa1;
+  color: $gray;
   letter-spacing: 2px;
 }
 
 .post_date{
   text-align: center;
-  color: #939aa1;
+  color: $gray;
 }
 
 .cd-container a {
-  color: #30434e;
+  color: $darkGray;
   text-decoration: none;
   font-family: "Fira Sans", sans-serif;
 }
@@ -520,7 +520,7 @@ Modules - reusable parts of our design
   left: 18px;
   height: 100%;
   width: 4px;
-  background: #d7e4ed;
+  background: $green;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -699,24 +699,24 @@ Modules - reusable parts of our design
   font-size: 14.5px;
   padding: 2px 13px;
   border: none;
-  background-color: #4CAF50;
+  background-color: $darkBlue;
   border-radius: 50px;
-  color: #fff;
+  color: $white;
 }
 
 .pagination a, .pagination span {
   padding: 7px 18px;
-  border: 1px solid #eee;
+  border: 1px solid $lightGray;
   margin-left: -2px;
   margin-right: -2px;
-  background-color: #ffffff;
+  background-color: $white;
   display: inline-block;
 }
 
 .pagination a {    
   &:hover {
-      background-color: #f1f1f1;
-      color: #333;
+      background-color: #f3f4f5;
+      color: $darkerGray;
   }
 }
 
@@ -764,15 +764,15 @@ Modules - reusable parts of our design
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid $lightGray;
   border-radius: 4px;
   box-sizing: border-box;
 }
 
 .subscribeBtn {
   width: 30%;
-  background-color: #4CAF50;
-  color: white;
+  background-color: $darkGreen;
+  color: $white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -782,7 +782,7 @@ Modules - reusable parts of our design
 }
 
 .tinyletterForm {
-  border: 1px solid #ccc;
+  border: 1px solid $lightGray;
   padding: 3px;
   text-align: center;
   background: #ececec;
@@ -802,11 +802,11 @@ Modules - reusable parts of our design
   position: relative;
   top: -1px;
   margin-left: 5px;
-  color: black;
+  color: $black;
 }
 
 .btn-subscribe:hover {
-  color: black;
+  color: $black;
 }
 
 .btn-subscribe > svg {
