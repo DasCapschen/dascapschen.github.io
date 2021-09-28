@@ -369,8 +369,7 @@ nav {
   border-bottom: none;
 }
 
-.post {
-  blockquote {
+blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $red;
     padding: 0.1em 1em;
@@ -380,6 +379,7 @@ nav {
     background-color: $lightGray;
   }
 
+.post {
   .you-may-like{
     margin: 1.8em .8em;
     /*border-left: 2px solid $gray;*/
