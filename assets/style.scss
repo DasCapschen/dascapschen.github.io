@@ -31,7 +31,7 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 1000px;
   padding: 0 10px;
   width: 100%;
 }
@@ -62,7 +62,7 @@ h2 {
   font-size: 24px;
 }
 
-@media (min-width: 769px){
+@media (min-width: 800px){
 	.post h2::before, .post h2::after {
 	    content: "";
 	    display: inline-block;
@@ -72,6 +72,25 @@ h2 {
 	    background: $green;
 	    margin: 0px 30px;
 	}
+}
+
+.sidebysidecontainer {
+	width: 100%;
+}
+.sidebysidecontainer::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.sidebyside {
+	padding: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebyside {
+    width: 100% !important;
+  }
 }
 
 h3 {
